@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSD Репозиторий</title>
+    <style>
+        /* Базовые настройки для тёмно-фиолетовой темы */
+        body {
+            background-color: #1a0b2e; /* Глубокий тёмно-фиолетовый фон */
+            color: #e0d4f7; /* Светлый текст */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #ba9ffb; /* Яркий фиолетовый для заголовка */
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        /* Контейнер для списка файлов */
+        .repo-container {
+            width: 100%;
+            max-width: 600px;
+            background: #25123e; /* Чуть более светлый фиолетовый для карточек */
+            border: 1px solid #3d2363;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Строка с файлом */
+        .file-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px;
+            border-bottom: 1px solid #3d2363;
+        }
+
+        /* Удаляем линию у последнего элемента */
+        .file-row:last-child {
+            border-bottom: none;
+        }
+
+        .file-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .file-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .file-description {
+            font-size: 0.85rem;
+            color: #a291b8;
+            margin-top: 4px;
+        }
+
+        /* Стиль кнопки скачивания */
+        .download-btn {
+            background-color: #6a1b9a; /* Фиолетовая кнопка */
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        /* Эффект при наведении */
+        .download-btn:hover {
+            background-color: #8e24aa;
+            transform: translateY(-1px);
+        }
+
+        .download-btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Мой SSD Репозиторий</h1>
+
+    <div class="repo-container">
+        
+        <!-- Файл 1: Ломбофикс -->
+        <div class="file-row">
+            <div class="file-info">
+                <span class="file-name">klombofixxx.exe</span>
+                <span class="file-description">Основная версия программы</span>
+            </div>
+            <!-- Ссылка на файл в этой же папке -->
+            <a href="klombofixxx.exe" download="klombofixxx.exe" class="download-btn">Скачать</a>
+        </div>
+
+        <!-- Файл 2: Ломбофикс копия -->
+        <div class="file-row">
+            <div class="file-info">
+                <span class="file-name">klombofixxx - копия.exe</span>
+                <span class="file-description">Резервная копия</span>
+            </div>
+            <!-- Пробелы автоматически заменяются на %20 для корректной ссылки -->
+            <a href="klombofixxx%20-%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.exe" download="klombofixxx - копия.exe" class="download-btn">Скачать</a>
+        </div>
+
+        <!-- Сюда в будущем вставляйте новые файлы -->
+
+    </div>
+
+</body>
+</html>
+
